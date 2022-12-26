@@ -3,7 +3,7 @@
 
 <br />
 
-## **Welcome to PKG!**
+## **Welcome to sleepyemoji!**
 There's now a paralyzing volume of unicode characters known as "emojis", which is great for creative expression, but bad for fetching the ~%10 of emojis you ever care to use.
 
 SleepyEmoji has entered the chat!

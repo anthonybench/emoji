@@ -12,7 +12,10 @@ iconsDict = {
   '🍆' : [':eggplant:',                 'eggplant'],
   '🍑' : [':peach:',                    'peach'],
   '💦' : [':sweat_drops:',              'water droplets'],
-  '✨' : [':sparkles:',                 '?'],
-  '🚧' : [':construction:',             'construction sign']
+  '✨' : [':sparkles:',                 'sparkles'],
+  '🚧' : [':construction:',             'construction sign'],
+  '❗' : [':exclamation:',              'red exclamation mark'],
+  '™️' : [':tm:',                        'trade mark sign'],
+  '📁' : [':file_folder:',              'closed file folder'],
 }
 # '' : ['::', ''],

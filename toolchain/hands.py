@@ -7,5 +7,6 @@ handsDict = {
   '👏' : [':clap:',        'clapping hands'],
   '👈' : [':point_left:',  '?'],
   '👉' : [':point_right:', '?'],
+  '🙌' : [':raised_hands:', 'hands raised in celebration'],
 }
 # '' : ['::', ''],
