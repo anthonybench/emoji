@@ -101,7 +101,7 @@ def sleepyemoji(*userArgs):
       exit(0)
     else:
       print('-'*header_row_width)
-      print(f"Emoji | Value{' '*(unicode_space - len('Value'))}Discord{' '*(discord_space - len('Discord'))}ios{' '*(ios_space - len('ios'))}")
+      print(f"Emoji │ Value{' '*(unicode_space - len('Value'))}Discord{' '*(discord_space - len('Discord'))}ios{' '*(ios_space - len('ios'))}")
       print('-'*header_row_width)
       for i in result.keys():
         emoji   = i
@@ -112,7 +112,7 @@ def sleepyemoji(*userArgs):
         if (val == discord) and (val == ios) and val == '!':
           print(f"{emoji}{' '*(combo_space - len(emoji))}(combo)")
         else:
-          print(f"{emoji:<{emoji_space}}| ", end='')
+          print(f"{emoji:<{emoji_space}}│ ", end='')
           print(f"{val:<{unicode_space}}", end='')
           print(f"{discord:<{discord_space}}", end='')
           print(f"{ios:<{ios_space}}", end='\n')

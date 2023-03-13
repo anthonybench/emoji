@@ -15,7 +15,9 @@ iconsDict = {
   '✨' : [':sparkles:',                 'sparkles'],
   '🚧' : [':construction:',             'construction sign'],
   '❗' : [':exclamation:',              'red exclamation mark'],
+  '❓' : [':question:',                 'red question mark'],
   '™️' : [':tm:',                        'trade mark sign'],
   '📁' : [':file_folder:',              'closed file folder'],
+  '🎉' : [':tada:',                     'party popper'],
 }
 # '' : ['::', ''],

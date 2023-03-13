@@ -19,5 +19,8 @@ facesDict = {
   '😭' : [':sob:',            'loudly crying face'],
   '🫠 ': ['n/a',              'melting face'],
   '🤣' : [':rofl:',           'rolling on the floor laughing face'],
+  '😤' : [':triumph:',        'face with steam from nose'],
+  '😈' : [':smiling_imp:',    'smiling face with horns'],
+  '👀' : [':eyes:',           'eyes'],
 }
 # '' : ['::', ''],
