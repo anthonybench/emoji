@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #===================================
 # Emoji cli tool
@@ -100,16 +100,16 @@ def sleepyemoji(*userArgs):
       print(f"Request was valid, however there are no entries.")
       exit(0)
     else:
-      print('-'*header_row_width)
+      print('─'*header_row_width)
       print(f"Emoji │ Value{' '*(unicode_space - len('Value'))}Discord{' '*(discord_space - len('Discord'))}ios{' '*(ios_space - len('ios'))}")
-      print('-'*header_row_width)
+      print('─'*header_row_width)
       for i in result.keys():
         emoji   = i
         val     = f"{emoji!a}".lstrip("'").rstrip("'")
         discord = result[i][0]
         ios     = result[i][1]
 
-        if (val == discord) and (val == ios) and val == '!':
+        if (not discord) and (not result) :
           print(f"{emoji}{' '*(combo_space - len(emoji))}(combo)")
         else:
           print(f"{emoji:<{emoji_space}}│ ", end='')
