@@ -67,10 +67,8 @@ icons = [
   ["🎉", ":tada:", "party popper"],
 ]
 people = [
-  "🤷",
-  [":person_shrugging", "person shrugging"],
-  "💃",
-  [":dancer:", "woman dancing"],
+  ["🤷", ":person_shrugging", "person shrugging"],
+  ["💃", ":dancer:", "woman dancing"],
 ]
 
 
