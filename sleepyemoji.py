@@ -9,26 +9,21 @@ Usage:
   from sys import argv, exit
 
   sleepyemoji(argv[1:])
-
   exit(0)
 
 Adding Emojis:
-  1. Append lists in toolchain/emojis.py
-  2. Update pypi package:
-    - poetry config http-basic.pypi sleepyboy <password>
-    - poetry version <next-version>
-    - poetry build
-    - poetry publish
-    - pip install <package> --upgrade # pull down update
-  3. Update repository
+  1. New category? Update toolchain/commands.py
+  2. Append lists in toolchain/emojis.py
+  3. Update pypi package
+  4. Update repository
 '''
 
 # stdlib
-from typing import List, Dict, Union
-from sys import argv, exit, getsizeof
-from subprocess import call, check_output
+import os
+from typing import List
+from sys import exit, argv
 # custom modules
-from toolchain.commands import sleepyemoji_logic
+from toolchain.commands import run_logic
 # 3rd party
 try:
   import typer
@@ -37,37 +32,41 @@ except ModuleNotFoundError as e:
   exit(1)
 
 
-#───Globals──────────────────
-app = typer.Typer()
-
-
 #───Commands─────────────────
-@app.command()
 def sleepyemoji(categories:List[str]) -> str:
-  '''Another example command
+  app = typer.Typer()
+  @app.command()
+  def run(categories:List[str]) -> str:
+    '''Another example command
 
-  Prints emojis with some metadata, organized by category.\n
-  ───Params\n
-  categories:List[str] :: emoji categories to include (casing ignored)
+    Prints emojis with some metadata, organized by category.
 
-  ───Categories\n
-    animals, a\n
-    faces, f\n
-    hands, h\n
-    icons, i\n
-    people, p\n
-    combos, combinations\n
-    all\n
+    ───Params\n
+    categories:List[str] :: emoji categories to include (casing ignored)
 
-  ───Example\n
-    ./sleepyemoji.py a f h
+    ───Categories\n
+      animals, a\n
+      faces, f\n
+      hands, h\n
+      icons, i\n
+      people, p\n
+      combos, combinations\n
+      all\n
 
-  ───Return\n
-  str :: prettytable string
-  '''
-  return sleepyemoji_logic(categories)
+    ───Example\n
+      ./sleepyemoji.py a f h
+
+    ───Return\n
+    str :: prettytable string
+    '''
+    if not categories:
+      os.environ['PAGER'] = 'cat'
+      help(sleepyemoji)
+      exit(1)
+    return run_logic(categories)
+  if (__name__ == "sleepyemoji") or (__name__ == '__main__'):
+    app()
 
 
-#───Entry────────────────────
-if __name__ == "__main__":
-  app()
+#───Local Testing────────────
+# sleepyemoji(argv)

@@ -1,9 +1,6 @@
 # stdlib
-from os import path
-from pathlib import Path
-from typing import List, Dict, Union
-from sys import argv, exit, getsizeof
-from subprocess import call, check_output
+from typing import List
+from sys import exit
 # custom modules
 from toolchain.emojis import *
 # 3rd party
@@ -15,7 +12,7 @@ except ModuleNotFoundError as e:
 
 
 #───Commands─────────────────
-def sleepyemoji_logic(categories:List[str]) -> str:
+def run_logic(categories:List[str]) -> str:
   '''adds categories to output table provided in input array'''
 
   cats = [i.lower() for i in categories]
