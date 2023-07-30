@@ -25,59 +25,36 @@ SleepyEmoji has entered the chat!
 ## **Get Started 🚀**
 <hr>
 
-To Install:
 ```sh
 pip install sleepyemoji
+pip install --upgrade sleepyemoji
 ```
-To update:
-```sh
-pip install sleepyemoji --upgrade
-```
-
-And set a personal alias in your shell to run the following script:
-```python
-from sleepyemoji import sleepyemoji
-from sys import argv, exit
-
-sleepyemoji(argv[1:])
-
-exit(0)
-```
-
-That's it! It will handle command line argument passthrough. \
-This document assumes the script alias to be `emoji`.
 
 <br />
 
 ## **Usage ⚙**
 <hr>
 
-After setting up the tool, run `emoji [-h|--help]` to display this message:
-```txt
-This tool prints emojis of one or more catgories, each defined in their own file.
-Emojis are given along with their unicode value, discord shorthand, and ios descriptor.
+Fetch dependencies:
+```sh
+pip install -r requirements.txt
+```
 
-For the official emoji index:
-  https://unicode.org/emoji/charts/full-emoji-list.html
+Set a function in your shell environment to run a script like:
+```sh
+# pip install sleepyemoji
+# pip install --upgrade sleepyemoji
 
+from sleepyemoji import sleepyemoji
+from sys import argv, exit
 
-Provide 1 or more options of various emoji categories, or simply request all of them.
---------------
-All:
-  ./main.py [-C|--complete]
-Categories:
-  /main.py [*flags]
-    [-A|--animals]
-    [-F|--faces]
-    [-H|--hands]
-    [-I|--icons]
-    [-P|--people]
-    [--combos|--combinations]
-Example:
-  ./main.py -A -H
-Info:
-  ./main.py [-h|--help]
---------------
+sleepyemoji(argv[1:])
+exit(0)
+```
+
+Presuming you've named said function `emoji`, print the help message:
+```sh
+emoji --help
 ```
 
 <br />
@@ -85,16 +62,15 @@ Info:
 ## **Technologies 🧰**
 <hr>
 
-  - Just vanilla Python3 🙂
+  - [prettytable]()
+  - [typer]()
 
 <br />
 
 ## **Contribute 🤝**
 <hr>
 
-This tool is kept in **Envi**, where emoji data is added in `emojis/toolchain` in the corresponding folders. This repository is private, thus the user must appreciate my favorite emojis, mwahahaha!
-
-Remember to pull before you push!
+If you feel slighted by your favorite emojis not being list in `toolchain/emojis`, submit a PR 😊.
 
 <br />
 
