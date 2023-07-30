@@ -32,7 +32,6 @@ except ModuleNotFoundError as e:
   exit(1)
 
 
-#───Commands─────────────────
 def sleepyemoji(categories:List[str]) -> str:
   app = typer.Typer()
   @app.command()
@@ -59,14 +58,10 @@ def sleepyemoji(categories:List[str]) -> str:
     ───Return\n
     str :: prettytable string
     '''
-    if not categories:
-      os.environ['PAGER'] = 'cat'
-      help(sleepyemoji)
-      exit(1)
     return run_logic(categories)
   if (__name__ == "sleepyemoji") or (__name__ == '__main__'):
     app()
 
 
-#───Local Testing────────────
+## Local Testing
 # sleepyemoji(argv)
