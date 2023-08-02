@@ -1,7 +1,7 @@
 # stdlib
 from typing import List
 from sys import exit
-# custom modules
+# custom
 from toolchain.emojis import *
 # 3rd party
 try:
@@ -12,7 +12,7 @@ except ModuleNotFoundError as e:
 
 
 #───Commands─────────────────
-def run_logic(categories:List[str]) -> str:
+def emoji_logic(categories:List[str]) -> str:
   '''adds categories to output table provided in input array'''
 
   cats = [i.lower() for i in categories]

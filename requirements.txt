@@ -1,3 +1,2 @@
-typer
-prettytable
-sleepyemoji
+typer >=0.9.0, ==0.9.*
+prettytable >=3.8, ==3.8.*

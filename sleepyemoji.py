@@ -19,11 +19,10 @@ Adding Emojis:
 '''
 
 # stdlib
-import os
 from typing import List
-from sys import exit, argv
+from sys import exit
 # custom modules
-from toolchain.commands import run_logic
+from toolchain.commands import emoji_logic
 # 3rd party
 try:
   import typer
@@ -35,7 +34,7 @@ except ModuleNotFoundError as e:
 def sleepyemoji(categories:List[str]) -> str:
   app = typer.Typer()
   @app.command()
-  def run(categories:List[str]) -> str:
+  def emoji(categories:List[str]) -> str:
     '''Another example command
 
     Prints emojis with some metadata, organized by category.
@@ -58,7 +57,7 @@ def sleepyemoji(categories:List[str]) -> str:
     ───Return\n
     str :: prettytable string
     '''
-    return run_logic(categories)
+    return emoji_logic(categories)
   if (__name__ == "sleepyemoji") or (__name__ == '__main__'):
     app()
 
