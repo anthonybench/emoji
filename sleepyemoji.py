@@ -20,7 +20,7 @@ Adding Emojis:
 
 # stdlib
 from typing import List
-from sys import exit
+from sys import exit, argv
 # custom modules
 from toolchain.commands import emoji_logic
 # 3rd party
