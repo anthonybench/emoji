@@ -21,6 +21,7 @@ faces = [
   ["🤯", "exploding_head", "exploding head"],
   ["🤓", ":nerd:", "smiling face with glasses"],
   ["😭", ":sob:", "loudly crying face"],
+  ["🥲", ":smiling_face_with_tear:", "smiling face with tear"],
   ["🫠 ", ":melting_face:", "melting face"],
   ["🤣", ":rofl:", "rolling on the floor laughing face"],
   ["😤", ":triumph:", "face with steam from nose"],
