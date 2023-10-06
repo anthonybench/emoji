@@ -2,7 +2,7 @@
 from typing import List
 from sys import exit
 # custom
-from toolchain.emojis import *
+from emoji_toolchain.emojis import *
 # 3rd party
 try:
   from prettytable import PrettyTable

@@ -25,6 +25,7 @@ faces = [
   ["🫠 ", ":melting_face:", "melting face"],
   ["🤣", ":rofl:", "rolling on the floor laughing face"],
   ["😤", ":triumph:", "face with steam from nose"],
+  ["🫡", ":saluting_face:", "saluting face"],
   ["😈", ":smiling_imp:", "smiling face with horns"],
   ["👀", ":eyes:", "eyes"],
 ]
@@ -45,6 +46,7 @@ hands = [
   ["👇", ":point_down:", "bakchand index finger pointing down"],
   ["🙌", ":raised_hands:", "hands raised in celebration"],
   ["💪", ":muscle:", "flexed bicep"],
+  ["👋", ":wave:", "waving hand"],
 ]
 icons = [
   ["🔥", ":fire:", "fire"],
@@ -66,6 +68,7 @@ icons = [
   ["™️", ":tm:", "trade mark sign"],
   ["📁", ":file_folder:", "closed file folder"],
   ["🎉", ":tada:", "party popper"],
+  ["⏳", ":hourglass_flowing_sand:", "hour glass with flowing sand"],
 ]
 people = [
   ["🤷", ":person_shrugging", "person shrugging"],

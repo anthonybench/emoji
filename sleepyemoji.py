@@ -22,7 +22,7 @@ Adding Emojis:
 from typing import List
 from sys import exit, argv
 # custom modules
-from toolchain.commands import emoji_logic
+from emoji_toolchain.commands import emoji_logic
 # 3rd party
 try:
   import typer
