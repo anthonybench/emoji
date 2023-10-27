@@ -62,15 +62,15 @@ emoji --help
 ## **Technologies 🧰**
 <hr>
 
-  - [prettytable]()
-  - [typer]()
+  - [prettytable](https://pypi.org/project/prettytable/)
+  - [typer](https://typer.tiangolo.com/)
 
 <br />
 
 ## **Contribute 🤝**
 <hr>
 
-If you feel slighted by your favorite emojis not being list in `toolchain/emojis`, submit a PR 😊.
+If you feel slighted by your favorite emojis not being list in `emoji_toolchain/emojis`, submit a PR 😊.
 
 <br />
 
@@ -91,6 +91,6 @@ Thanks to my late cat Merlin, who whispered best practices in my ear while I wro
 ![PyPI - License](https://img.shields.io/pypi/l/sleepyemoji?style=plastic)
 
 <!-- / -->
-See [License](TODO) for the full license text.
+See [License](LICENSE) for the full license text.
 
 This package was authored by *Isaac Yep*.

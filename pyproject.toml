@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "sleepyemoji"
-version = "3.8.4"
+version = "3.8.5"
 description = "Print all the emojis that sleepyboy thinks are worthwhile!"
 authors = ["anthonybench <anythonybenchyep@gmail.com>"]
 license = "GNU GPL"

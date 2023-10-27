@@ -17,6 +17,7 @@ faces = [
   ["😑", ":expressionless:", "expressionless face"],
   ["🥳", ":partying face:", "party face"],
   ["😴", ":sleeping:", "sleeping face"],
+  ["🤤", ":drooling_face:", "drooling face"],
   ["🥵", ":hot_face:", "hot face"],
   ["🤯", "exploding_head", "exploding head"],
   ["🤓", ":nerd:", "smiling face with glasses"],
