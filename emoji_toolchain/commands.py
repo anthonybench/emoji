@@ -7,8 +7,7 @@ from emoji_toolchain.emojis import *
 try:
   from prettytable import PrettyTable
 except ModuleNotFoundError as e:
-  print("Error: Missing one or more 3rd-party packages (pip install).")
-  exit(1)
+  raise Exception("Error, Missing one or more 3rd-party packages (pip install).\n{e}")
 
 
 #───Commands─────────────────
