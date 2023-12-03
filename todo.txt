@@ -1,0 +1,2 @@
+- explore using tabulate vs prettytable
+- fix combos option (should be a single, column table, perhaps not a table at all)
